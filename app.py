@@ -113,4 +113,4 @@ def actualizar(zona, ahorro, rango_edad, clasif_sbs):
 
 #ejecutar la visual de una manera externa
 
-app.run_server(mode="external")
+app.run_server(host="0.0.0.0", port=8050, debug=True)
