@@ -1,16 +1,13 @@
 #importacion de librerias
-mport pandas as pd
+import pandas as pd
 import plotly.express as px
 import dash_bootstrap_components as dbc
 from dash import Dash, dcc, html, Input, Output
 
 
-#enlazar mi drive con colab
-from google.colab import drive
-drive.mount('/content/drive')
 
 # Ajusta la ruta  archivo
-df = pd.read_csv('/content/drive/MyDrive/data.csv')
+df = pd.read_csv('banca.csv')
 df.head()
 
 #crear el dashboard
